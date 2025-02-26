@@ -6,6 +6,6 @@
     <title>Livewire</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <livewire:spiffy-component />
 </body>
 </html>
