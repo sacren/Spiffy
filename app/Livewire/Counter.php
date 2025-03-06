@@ -8,6 +8,11 @@ class Counter extends Component
 {
     public int $count = 6;
 
+    public function changeCount()
+    {
+        $this->count = 32;
+    }
+
     public function render()
     {
         return view('livewire.counter');
