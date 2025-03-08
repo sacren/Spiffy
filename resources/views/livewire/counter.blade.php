@@ -1,6 +1,6 @@
 <div>
     <p>Current time: {{ now('America/Denver') }}</p>
     <p>{{ $count }}</p>
-    <input type="number" wire:model.live="count">
-    <button wire:click="changeCount(64)">Change Count</button>
+    <input type="number" wire:model="number">
+    <button wire:click="changeCount({{ $number }})">Change Count</button>
 </div>
