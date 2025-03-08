@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Dummy;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -10,6 +11,4 @@ Route::get('/counter', function () {
     return view('counter');
 });
 
-Route::get('/dummy', function () {
-    return view('dummy');
-});
+Route::get('/dummy', Dummy::class);
