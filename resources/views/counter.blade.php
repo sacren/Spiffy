@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+    @vite(['resources/css/app.css'])
 </head>
 <body>
     <livewire:counter></livewire:counter>
