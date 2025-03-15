@@ -3,6 +3,16 @@
         <div class="text-2xl font-bold text-center text-gray-800 mb-4">
             Count: {{ $count }}
         </div>
+        <div class="flex gap-3">
+            <button wire:click="increment"
+                    class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105">
+                Increment
+            </button>
+            <button wire:click="decrement"
+                    class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105">
+                Decrement
+            </button>
+        </div>
     </div>
 
     <div class="mb-6">
