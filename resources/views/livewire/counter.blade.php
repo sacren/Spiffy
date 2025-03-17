@@ -13,6 +13,12 @@
                 Decrement
             </button>
         </div>
+        <div class="mt-3">
+            <button wire:click="incrementCount(10)"
+                    class="w-full bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-200 ease-in-out transform hover:scale-105">
+                Increment by 10
+            </button>
+        </div>
     </div>
 
     <div class="mb-6">

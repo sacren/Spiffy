@@ -19,6 +19,11 @@ class Counter extends Component
         $this->count--;
     }
 
+    public function incrementCount($amount)
+    {
+        $this->count += $amount;
+    }
+
     public function changeCount(int $number)
     {
         $this->count = $number;
