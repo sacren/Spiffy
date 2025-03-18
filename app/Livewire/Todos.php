@@ -16,7 +16,7 @@ class Todos extends Component
     public function add()
     {
         $this->todos[] = $this->task;
-        $this->task = null;
+        $this->reset('task');
     }
 
     public function render()
