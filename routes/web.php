@@ -13,3 +13,7 @@ Route::get('/counter', function () {
 Route::get('/dummy', function () {
     return view('dummy');
 });
+
+Route::get('/todos', function () {
+    return view('todos');
+});
