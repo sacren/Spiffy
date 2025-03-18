@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy</title>
-    @vite(['resources/css/app.css'])
-</head>
-<body>
+<x-layouts.app>
     <livewire:dummy></livewire:dummy>
-</body>
-</html>
+</x-layouts.app>

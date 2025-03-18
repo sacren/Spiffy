@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
-    @vite(['resources/css/app.css'])
-</head>
-<body>
+<x-layouts.app class="app">
     <livewire:counter></livewire:counter>
-</body>
-</html>
+</x-layouts.app>
