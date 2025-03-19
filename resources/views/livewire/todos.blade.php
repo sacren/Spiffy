@@ -1,5 +1,5 @@
 <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-    <form wire:submit="add">
+    <form wire:submit.prevent="add">
         <!-- Input and Add Button -->
         <div class="flex space-x-2">
             <input type="text" wire:model="task" placeholder="Add a new task"
