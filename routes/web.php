@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Todos;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,6 +15,4 @@ Route::get('/dummy', function () {
     return view('dummy');
 });
 
-Route::get('/todos', function () {
-    return view('todos');
-});
+Route::get('/todos', Todos::class);
