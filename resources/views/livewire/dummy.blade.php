@@ -1,7 +1,3 @@
-<x-slot:title>
-    {{ __('Dummy') }}
-</x-slot:title>
-
 <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
     <!-- Time Display -->
     <div class="mb-6 p-4 bg-gray-100 rounded-lg border border-gray-200 text-center">
