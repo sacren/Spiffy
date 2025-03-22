@@ -10,7 +10,7 @@ class Todos extends Component
 {
     public $task = null;
 
-    public $todos = [];
+    public $todos = null;
 
     public function mount()
     {
