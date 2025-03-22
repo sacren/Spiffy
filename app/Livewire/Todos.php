@@ -10,10 +10,15 @@ class Todos extends Component
 {
     public $task = null;
 
-    public $todos = [
-        'Compile Linux kernel',
-        'Update Laravel',
-    ];
+    public $todos = [];
+
+    public function mount()
+    {
+        $this->todos = [
+            'Compile Linux kernel',
+            'Update Laravel',
+        ];
+    }
 
     public function add()
     {
