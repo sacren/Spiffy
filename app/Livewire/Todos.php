@@ -9,14 +9,12 @@ use Livewire\Component;
 class Todos extends Component
 {
     public $task;
-    public $todos;
+    public $todos = [];
 
     public function mount()
     {
-        $this->todos = [
-            'Compile Linux kernel',
-            'Update Laravel',
-        ];
+        $this->todos[] = 'Compile Linux kernel';
+        $this->todos[] = 'Update Laravel';
     }
 
     public function add()
