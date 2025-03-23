@@ -8,7 +8,7 @@ use Livewire\Component;
 #[Title('New Task')]
 class Todos extends Component
 {
-    public $task;
+    public $task = '';
     public $todos = [];
 
     public function mount()
