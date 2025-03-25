@@ -11,6 +11,11 @@ class Todos extends Component
     public $task = '';
     public $todos = [];
 
+    public function updated($property, $value)
+    {
+        $this->$property = strtoupper($value);
+    }
+
     public function mount()
     {
         $this->todos[] = 'Compile Linux kernel';
