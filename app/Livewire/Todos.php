@@ -11,9 +11,9 @@ class Todos extends Component
     public $task = '';
     public $todos = [];
 
-    public function updated($property, $value)
+    public function updatedTask($value)
     {
-        $this->$property = strtoupper($value);
+        $this->task = strtoupper($value);
     }
 
     public function mount()
