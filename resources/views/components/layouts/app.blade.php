@@ -12,10 +12,10 @@
             <!-- Vertical Navigation -->
             <nav class="w-48 min-h-screen bg-white shadow-md p-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="/" class="px-4 py-2 hover:bg-gray-100 rounded">Home</a>
-                    <a href="/todos" class="px-4 py-2 hover:bg-gray-100 rounded">Todos</a>
-                    <a href="/counter" class="px-4 py-2 hover:bg-gray-100 rounded">Counter</a>
-                    <a href="/dummy" class="px-4 py-2 hover:bg-gray-100 rounded">Dummy</a>
+                    <a href="/" class="px-4 py-2 hover:bg-gray-100 rounded {{ request()->is('/') ? 'bg-blue-100 text-blue-600 font-medium' : '' }}">Home</a>
+                    <a href="/todos" class="px-4 py-2 hover:bg-gray-100 rounded {{ request()->is('todos') ? 'bg-blue-100 text-blue-600 font-medium' : '' }}">Todos</a>
+                    <a href="/counter" class="px-4 py-2 hover:bg-gray-100 rounded {{ request()->is('counter') ? 'bg-blue-100 text-blue-600 font-medium' : '' }}">Counter</a>
+                    <a href="/dummy" class="px-4 py-2 hover:bg-gray-100 rounded {{ request()->is('dummy') ? 'bg-blue-100 text-blue-600 font-medium' : '' }}">Dummy</a>
                 </div>
             </nav>
 
