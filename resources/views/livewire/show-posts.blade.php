@@ -5,7 +5,7 @@
         @foreach($posts as $post)
             <div wire:key="{{ $post->id }}" class="p-4">
                 <h3 class="font-medium text-lg">{{ $post->title }}</h3>
-                <p class="text-gray-600 mt-1">{{ $post->content }}</p>
+                <p class="text-gray-600 mt-1">{{ Str::words($post->content, 12) }}</p>
             </div>
         @endforeach
     </div>
