@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Counter;
+use App\Livewire\CreatePost;
 use App\Livewire\Dummy;
 use App\Livewire\ShowPosts;
 use App\Livewire\SpiffyComponent;
@@ -12,3 +13,4 @@ Route::get('/counter', Counter::class);
 Route::get('/dummy', Dummy::class);
 Route::get('/todos', Todos::class);
 Route::get('/posts', ShowPosts::class);
+Route::get('/posts/create', CreatePost::class)->name('post.create');
