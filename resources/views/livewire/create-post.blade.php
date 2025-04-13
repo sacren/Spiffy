@@ -9,12 +9,12 @@
     @endif
 
     <!-- Form -->
-    <form action="/posts" method="POST" class="space-y-4">
+    <form wire:submit="save" class="space-y-4">
         @csrf
         <!-- Title Input -->
         <div>
             <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
-            <input type="text" id="title"
+            <input type="text" id="title" wire:model="title"
                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
             @error('title')
                 <span class="text-red-500 text-sm">{{ $message }}</span>
@@ -24,7 +24,7 @@
         <!-- Content Input -->
         <div>
             <label for="content" class="block text-sm font-medium text-gray-700">Content</label>
-            <textarea id="content" rows="5"
+            <textarea id="content" rows="5" wire:model="content"
                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
             @error('content')
                 <span class="text-red-500 text-sm">{{ $message }}</span>
