@@ -7,15 +7,17 @@ use Livewire\Component;
 
 class CreatePost extends Component
 {
+    protected $rules = [
+        'title' => 'required|min:3|max:255',
+        'content' => 'required|min:10',
+    ];
+
     public $title;
     public $content;
 
     public function save()
     {
-        $this->validate([
-            'title' => 'required|min:3|max:255',
-            'content' => 'required|min:10',
-        ]);
+        $this->validate();
 
         Post::create([
             'title' => $this->title,
