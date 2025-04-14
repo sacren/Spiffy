@@ -16,6 +16,8 @@ class CreatePost extends Component
             'title' => $this->title,
             'content' => $this->content,
         ]);
+
+        return redirect()->route('posts.index');
     }
 
     public function render()

@@ -12,5 +12,5 @@ Route::get('/', SpiffyComponent::class);
 Route::get('/counter', Counter::class);
 Route::get('/dummy', Dummy::class);
 Route::get('/todos', Todos::class);
-Route::get('/posts', ShowPosts::class);
+Route::get('/posts', ShowPosts::class)->name('posts.index');
 Route::get('/posts/create', CreatePost::class)->name('post.create');
