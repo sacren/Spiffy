@@ -12,6 +12,11 @@ class CreatePost extends Component
 
     public function save()
     {
+        $this->validate([
+            'title' => 'required|min:3|max:255',
+            'content' => 'required|min:10',
+        ]);
+
         Post::create([
             'title' => $this->title,
             'content' => $this->content,
