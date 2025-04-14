@@ -22,6 +22,9 @@ class CreatePost extends Component
             'content' => $this->content,
         ]);
 
+        // Reset form fields to prevent duplicate submissions
+        $this->reset(['title', 'content']);
+
         $this->redirect(route('posts.index'));
     }
 
