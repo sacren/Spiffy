@@ -8,7 +8,9 @@ use Livewire\Component;
 
 class CreatePost extends Component
 {
-    #[Rule('required|min:3|max:255', as: 'IMPORTANT')]
+    #[Rule('required', message: 'The custom title is required')]
+    #[Rule('min:3', message: 'At least 3 characters')]
+    #[Rule('max:255', message: 'At most 255 characters')]
     public $title;
 
     #[Rule('required|min:10', as: 'DETAILED')]
