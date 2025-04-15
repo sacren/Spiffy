@@ -3,16 +3,15 @@
 namespace App\Livewire;
 
 use App\Models\Post;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class CreatePost extends Component
 {
-    protected $rules = [
-        'title' => 'required|min:3|max:255',
-        'content' => 'required|min:10',
-    ];
-
+    #[Rule('required|min:3|max:255')]
     public $title;
+
+    #[Rule('required|min:10')]
     public $content;
 
     public function save()
