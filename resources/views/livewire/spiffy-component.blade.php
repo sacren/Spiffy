@@ -6,4 +6,7 @@
 
         <button x-on:click="count++">+</button>
     </div>
+
+    <span x-text="256"></span>
+    <span x-text="count"></span>
 </div>
