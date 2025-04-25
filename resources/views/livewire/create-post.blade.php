@@ -8,6 +8,12 @@
         </div>
     @endif
 
+    <!-- Current Title Section -->
+    <div class="flex items-center space-x-2 bg-gray-50 p-4 rounded-md border border-gray-200">
+        <span class="text-sm font-medium text-gray-600">Current Title:</span>
+        <span x-text="$wire.title" class="text-sm font-semibold text-indigo-600"></span>
+    </div>
+
     <!-- Form -->
     <form wire:submit="save" class="space-y-4">
         @csrf
