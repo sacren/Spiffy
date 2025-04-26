@@ -9,9 +9,21 @@
     @endif
 
     <!-- Current Title Section -->
-    <div class="flex items-center space-x-2 bg-gray-50 p-4 rounded-md border border-gray-200">
-        <span class="text-sm font-medium text-gray-600">Current Title:</span>
-        <span x-text="$wire.title" class="text-sm font-semibold text-indigo-600"></span>
+    <div class="block bg-gray-50 p-4 rounded-md border border-gray-200">
+        <div class="space-y-2">
+            <div class="flex items-center space-x-2">
+                <span class="text-sm font-medium text-gray-600">Current Title:</span>
+                <span x-text="$wire.title" class="text-sm font-semibold text-indigo-600"></span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-sm font-medium text-gray-600">Uppercase Title:</span>
+                <span x-text="$wire.title.toUpperCase()" class="text-sm font-semibold text-indigo-600"></span>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="text-sm font-medium text-gray-600">Character Count:</span>
+                <span x-text="$wire.title.length" class="text-sm font-semibold text-indigo-600"></span>
+            </div>
+        </div>
     </div>
 
     <!-- Form -->
