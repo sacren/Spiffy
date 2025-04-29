@@ -23,6 +23,9 @@
                 <span class="text-sm font-medium text-gray-600">Character Count:</span>
                 <span x-text="$wire.title.length" class="text-sm font-semibold text-indigo-600"></span>
             </div>
+            <div class="flex items-center space-x-2">
+                <button x-on:click="$wire.title = ''" class="px-3 py-1.5 bg-indigo-600 text-white text-sm font-medium rounded-md">Clear Title</button>
+            </div>
         </div>
     </div>
 
