@@ -16,7 +16,7 @@ class CreatePost extends Component
     public $title;
 
     #[Rule('required|min:10', as: 'DETAILED')]
-    public $content;
+    public $content = '';
 
     public function save()
     {

@@ -20,11 +20,8 @@
                 <span x-text="$wire.title.toUpperCase()" class="text-sm font-semibold text-indigo-600"></span>
             </div>
             <div class="flex items-center space-x-2">
-                <span class="text-sm font-medium text-gray-600">Character Count:</span>
-                <span x-text="$wire.title.length" class="text-sm font-semibold text-indigo-600"></span>
-            </div>
-            <div class="flex items-center space-x-2">
-                <button x-on:click="$wire.title = ''" class="px-3 py-1.5 bg-indigo-600 text-white text-sm font-medium rounded-md">Clear Title</button>
+                <button x-on:click="$wire.title = ''"
+                    class="px-3 py-1.5 bg-indigo-600 text-white text-sm font-medium rounded-md">Clear Title</button>
             </div>
         </div>
     </div>
@@ -47,6 +44,10 @@
             <label for="content" class="block text-sm font-medium text-gray-700">Content</label>
             <textarea id="content" rows="5" wire:model="content"
                 class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            <!-- Character Counter -->
+            <div class="mt-1 flex justify-end text-sm text-gray-500">
+                <span>Characters: <span x-text="$wire.content.length"></span></span>
+            </div>
             @error('content')
                 <span class="text-red-500 text-sm">{{ $message }}</span>
             @enderror
